@@ -386,7 +386,7 @@ h1, h2, h3, h4 {
 
 .process__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   margin-bottom: 64px;
 }
@@ -429,6 +429,20 @@ h1, h2, h3, h4 {
   font-size: 15px;
   color: var(--color-muted);
   line-height: 1.55;
+}
+
+ul.process__card-text {
+  margin: 0;
+  padding-left: 1.2em;
+  list-style: disc;
+}
+
+ul.process__card-text li {
+  margin-bottom: 4px;
+}
+
+ul.process__card-text li:last-child {
+  margin-bottom: 0;
 }
 
 /* CTA Banner */
