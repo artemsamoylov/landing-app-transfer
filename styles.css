@@ -450,6 +450,105 @@ h1, h2, h3, h4 {
 
 
 /* ============================================
+   Cases
+   ============================================ */
+
+.cases {
+  padding: var(--section-padding) 0;
+  background: var(--color-white);
+}
+
+.cases__title {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  text-align: center;
+  margin-bottom: 56px;
+  color: var(--color-dark);
+}
+
+.cases__title--accent {
+  color: var(--color-primary);
+}
+
+.cases__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.cases__card {
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-shadow: var(--shadow-card);
+  overflow: visible;
+}
+
+.cases__card--calzen {
+  background: #E8F4FC;
+}
+
+.cases__card--summarizer {
+  background: #F0F0F0;
+}
+
+.cases__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cases__card-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--color-dark);
+  letter-spacing: -0.02em;
+}
+
+.cases__card-desc {
+  font-size: 18px;
+  color: var(--color-text);
+  line-height: 1.55;
+}
+
+.cases__card-time {
+  font-size: 17px;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.cases__phones {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.cases__phone {
+  width: 260px;
+  min-width: 260px;
+  height: 563px; /* 260 * 19.5/9 */
+  flex-shrink: 0;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  background: #1a1a1a;
+}
+
+.cases__phone img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* ============================================
    FAQ
    ============================================ */
 
@@ -712,6 +811,16 @@ h1, h2, h3, h4 {
 
   .process__grid {
     grid-template-columns: 1fr;
+  }
+
+  .cases__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cases__phone {
+    width: 200px;
+    min-width: 200px;
+    height: 433px;
   }
 
   .process__cta-banner {

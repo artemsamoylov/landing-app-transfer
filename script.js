@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---- Scroll reveal animation ---- */
   const revealElements = document.querySelectorAll(
-    '.about__inner, .process__card, .faq__item, .process__cta-banner'
+    '.about__inner, .process__card, .cases__card, .faq__item, .process__cta-banner'
   );
 
   if ('IntersectionObserver' in window) {
@@ -164,6 +164,9 @@ document.addEventListener('DOMContentLoaded', () => {
       // Stagger delay for cards in the same grid
       if (el.classList.contains('process__card')) {
         el.style.transitionDelay = `${(i % 3) * 0.1}s`;
+      }
+      if (el.classList.contains('cases__card')) {
+        el.style.transitionDelay = `${(i % 2) * 0.1}s`;
       }
     });
 
