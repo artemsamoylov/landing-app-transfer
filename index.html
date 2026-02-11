@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портирование мобильных приложений iOS ↔ Android</title>
+  <meta name="description" content="Переносим приложения между iOS и Android: аудит, план работ, разработка спринтами, QA, релиз и поддержка. Оценка сроков и бюджета за 48 часов.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Портирование мобильных приложений iOS ↔ Android">
+  <meta property="og:description" content="Переносим приложения между iOS и Android: аудит, план работ, разработка спринтами, QA, релиз и поддержка. Оценка сроков и бюджета за 48 часов.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="/" class="header__logo">Omni Apps Dev</a>
+
+      <nav class="header__nav" id="nav">
+        <a href="#process" class="header__link">Процесс</a>
+        <a href="#faq" class="header__link">FAQ</a>
+        <a href="#contacts" class="header__link">Контакты</a>
+      </nav>
+
+      <a href="https://t.me/placeholder" target="_blank" rel="noopener" class="btn btn--primary header__cta">
+        Бесплатная консультация
+      </a>
+
+      <button class="header__burger" id="burger" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <!-- Decorative elements -->
+      <div class="hero__decor hero__decor--bracket-tl" aria-hidden="true">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M16 8H8v32h8M32 8h8v32h-8" stroke="#0A84FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"/></svg>
+      </div>
+      <div class="hero__decor hero__decor--arrow-l" aria-hidden="true">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M8 32L32 8M32 8H12M32 8v20" stroke="#FF9500" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="hero__decor hero__decor--hash-r" aria-hidden="true">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M16 6v36M32 6v36M6 16h36M6 32h36" stroke="#FF9500" stroke-width="3" stroke-linecap="round" opacity="0.5"/></svg>
+      </div>
+      <div class="hero__decor hero__decor--slash" aria-hidden="true">
+        <svg width="32" height="48" viewBox="0 0 32 48" fill="none"><path d="M24 4L8 44" stroke="#0A84FF" stroke-width="3" stroke-linecap="round" opacity="0.3"/></svg>
+      </div>
+      <div class="hero__decor hero__decor--star" aria-hidden="true">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 2v32M2 18h32M6 6l24 24M30 6L6 30" stroke="#0A84FF" stroke-width="2.5" stroke-linecap="round" opacity="0.25"/></svg>
+      </div>
+      <div class="hero__decor hero__decor--bracket-br" aria-hidden="true">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M8 4L4 20l4 16M32 4l4 16-4 16" stroke="#6B7280" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.25"/></svg>
+      </div>
+      <div class="hero__decor hero__decor--chevron" aria-hidden="true">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M8 28L18 8l10 20" stroke="#FF9500" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/></svg>
+      </div>
+
+      <div class="container hero__inner">
+        <h1 class="hero__title">
+          Перенос вашего приложения<br>
+          <span class="hero__title--accent">на другие платформы</span>
+        </h1>
+
+        <!-- Platform visual (typewriter) -->
+        <div class="hero__platforms hero__typewriter" aria-live="polite">
+          <span class="hero__typewriter-text"></span>
+          <span class="hero__typewriter-cursor" aria-hidden="true">|</span>
+        </div>
+
+        <a href="https://t.me/placeholder" target="_blank" rel="noopener" class="btn btn--primary btn--large hero__cta">
+          Записаться на бесплатную консультацию
+        </a>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process" id="process">
+      <div class="container">
+        <h2 class="section__title">Как мы работаем</h2>
+
+        <div class="process__grid">
+          <div class="process__card">
+            <span class="process__number">01</span>
+            <h3 class="process__card-title">Discovery / аудит</h3>
+            <p class="process__card-text">Собираем контекст, доступы, разбираем архитектуру, риски, интеграции.</p>
+          </div>
+
+          <div class="process__card">
+            <span class="process__number">02</span>
+            <h3 class="process__card-title">Фича-карта + план</h3>
+            <p class="process__card-text">Фиксируем объём, приоритеты, «must-have для релиза», этапы и критерии готовности.</p>
+          </div>
+
+          <div class="process__card">
+            <span class="process__number">03</span>
+            <h3 class="process__card-title">Архитектура и инфраструктура</h3>
+            <p class="process__card-text">Проект, модули, навигация, CI/CD, сборки, окружения, линтеры.</p>
+          </div>
+
+          <div class="process__card">
+            <span class="process__number">04</span>
+            <h3 class="process__card-title">Разработка спринтами</h3>
+            <p class="process__card-text">Еженедельные демо-сборки, трекинг прогресса, ревью, документация.</p>
+          </div>
+
+          <div class="process__card">
+            <span class="process__number">05</span>
+            <h3 class="process__card-title">QA и стабилизация</h3>
+            <p class="process__card-text">Тестирование, краши, перфоманс, соответствие стор-гайдам.</p>
+          </div>
+
+          <div class="process__card">
+            <span class="process__number">06</span>
+            <h3 class="process__card-title">Релиз и поддержка</h3>
+            <p class="process__card-text">Публикация, мониторинг, хотфиксы, план развития.</p>
+          </div>
+        </div>
+
+        <div class="process__cta-banner">
+          <p class="process__cta-text">Хотите так же?</p>
+          <a href="https://t.me/placeholder" target="_blank" rel="noopener" class="btn btn--primary btn--large">
+            Получить оценку за 48 часов
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="section__title">FAQ</h2>
+
+        <div class="faq__list">
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Сможете повторить поведение 1-в-1?</span>
+              <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq__answer">
+              <p>Стремимся к максимальному паритету. Где есть платформенные различия — фиксируем их заранее и предлагаем варианты.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Что нужно от нас для старта?</span>
+              <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq__answer">
+              <p>Ссылка на текущее приложение, доступ к API/бэкенду (если есть), дизайн/макеты (если есть), доступ к репозиторию (желательно).</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Можно ли портировать без исходников?</span>
+              <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq__answer">
+              <p>Иногда — да (через восстановление логики и воспроизведение поведения), но это дороже и рискованнее. На аудите скажем честно.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Что с аналитикой, пушами, платежами, deeplink?</span>
+              <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq__answer">
+              <p>Закладываем как часть «must-have» для релиза и проверяем тестовыми сценариями.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Делаете ли вы кроссплатформу (Flutter/React Native)?</span>
+              <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq__answer">
+              <p>Мы фокусируемся на нативе. Если кросс-платформа объективно выгоднее — скажем об этом на аудите.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Кто публикует релиз в стор?</span>
+              <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq__answer">
+              <p>Можем сделать под вашим аккаунтом (рекомендуется) или помочь подготовить всё к публикации.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contacts">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="/" class="footer__logo">Omni Apps Dev</a>
+        <p class="footer__copy">&copy; 2026 Omni Apps Dev</p>
+      </div>
+
+      <div class="footer__contacts">
+        <h4 class="footer__heading">Контакты</h4>
+        <a href="https://t.me/placeholder" target="_blank" rel="noopener" class="footer__link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21.2 4.4L2.4 11.1c-.7.3-.7.9 0 1.1l4.8 1.5 1.9 5.9c.2.5.7.5 1 .2l2.7-2.2 5.3 3.9c.5.4 1.1.2 1.2-.4L22.5 5.4c.2-.8-.5-1.3-1.3-1z" fill="#0A84FF"/></svg>
+          Telegram
+        </a>
+      </div>
+
+      <div class="footer__legal">
+        <a href="#" class="footer__link footer__link--small">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
