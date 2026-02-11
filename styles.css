@@ -291,6 +291,77 @@ h1, h2, h3, h4 {
 
 
 /* ============================================
+   About
+   ============================================ */
+
+.about {
+  padding: var(--section-padding) 0;
+  background: var(--color-light-bg);
+}
+
+.about .section__title {
+  margin-bottom: 48px;
+}
+
+.about__inner {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 64px;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about__photo {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 1;
+  box-shadow: var(--shadow-card);
+}
+
+.about__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about__name {
+  font-size: clamp(28px, 3vw, 36px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--color-dark);
+}
+
+.about__role {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about__text-item {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color-text);
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+
+/* ============================================
    Section Title (shared)
    ============================================ */
 
@@ -626,6 +697,17 @@ h1, h2, h3, h4 {
   .btn--large {
     padding: 14px 28px;
     font-size: 15px;
+  }
+
+  .about__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .about__photo {
+    max-width: 280px;
+    margin: 0 auto;
   }
 
   .process__grid {

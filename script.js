@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---- Scroll reveal animation ---- */
   const revealElements = document.querySelectorAll(
-    '.process__card, .faq__item, .process__cta-banner'
+    '.about__inner, .process__card, .faq__item, .process__cta-banner'
   );
 
   if ('IntersectionObserver' in window) {
