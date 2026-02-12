@@ -471,6 +471,71 @@ ul.process__card-text li:last-child {
 
 
 /* ============================================
+   Pricing & Timeline
+   ============================================ */
+
+.pricing {
+  padding: var(--section-padding) 0;
+}
+
+.pricing__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.pricing__card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  box-shadow: var(--shadow-card);
+  transition: all var(--transition);
+}
+
+.pricing__card:hover {
+  box-shadow: var(--shadow-card-hover);
+}
+
+.pricing__card.revealed:hover {
+  transform: translateY(-4px);
+}
+
+.pricing__card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-muted);
+  margin-bottom: 12px;
+}
+
+.pricing__value {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--color-primary);
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.pricing__note {
+  text-align: center;
+  font-size: 17px;
+  color: var(--color-muted);
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pricing__link {
+  color: var(--color-primary);
+  font-weight: 600;
+  transition: color var(--transition);
+}
+
+.pricing__link:hover {
+  color: var(--color-primary-hover);
+}
+
+/* ============================================
    Cases
    ============================================ */
 
