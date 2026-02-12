@@ -227,6 +227,15 @@ h1, h2, h3, h4 {
    Hero
    ============================================ */
 
+/* Чередование фона секций для удобства чтения */
+main > section:nth-child(odd) {
+  background: var(--color-white);
+}
+
+main > section:nth-child(even) {
+  background: var(--color-light-bg);
+}
+
 .hero {
   padding: calc(var(--header-height) + 80px) 0 100px;
   min-height: 85vh;
@@ -296,7 +305,6 @@ h1, h2, h3, h4 {
 
 .about {
   padding: var(--section-padding) 0;
-  background: var(--color-light-bg);
 }
 
 .about .section__title {
@@ -381,7 +389,6 @@ h1, h2, h3, h4 {
 
 .process {
   padding: var(--section-padding) 0;
-  background: var(--color-light-bg);
 }
 
 .process__grid {
@@ -469,7 +476,6 @@ ul.process__card-text li:last-child {
 
 .cases {
   padding: var(--section-padding) 0;
-  background: var(--color-white);
 }
 
 .cases__title {
