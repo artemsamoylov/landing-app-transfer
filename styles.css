@@ -956,6 +956,13 @@ ul.process__card-text li:last-child {
     font-size: 28px;
   }
 
+  .hero__cta {
+    width: 100%;
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+
   .section__title {
     font-size: 28px;
     margin-bottom: 40px;
