@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Студия портирования приложений</title>
-  <meta name="description" content="Переносим приложения между iOS и Android: аудит, план работ, разработка спринтами, QA, релиз и поддержка. Оценка сроков и бюджета за 48 часов.">
+  <title>App Porting Studio — Clonedike</title>
+  <meta name="description" content="We port apps between iOS and Android: discovery, development, QA, release and support. Cost and timeline estimate within 48 hours.">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Студия портирования приложений">
-  <meta property="og:description" content="Переносим приложения между iOS и Android: аудит, план работ, разработка спринтами, QA, релиз и поддержка. Оценка сроков и бюджета за 48 часов.">
+  <meta property="og:title" content="App Porting Studio — Clonedike">
+  <meta property="og:description" content="We port apps between iOS and Android: discovery, development, QA, release and support. Cost and timeline estimate within 48 hours.">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="ru_RU">
+  <meta property="og:locale" content="en_US">
 
   <!-- Language detection -->
   <script>
     var saved = localStorage.getItem('lang');
-    if (!saved && !(navigator.language || '').startsWith('ru')) {
-      localStorage.setItem('lang', 'en');
-      window.location.replace('/en/');
+    if (!saved && (navigator.language || '').startsWith('ru')) {
+      localStorage.setItem('lang', 'ru');
+      window.location.replace('/');
     }
   </script>
 
@@ -26,31 +26,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
   <!-- Header -->
   <header class="header" id="header">
     <div class="container header__inner">
-      <a href="/" class="header__logo">Clonedike</a>
+      <a href="/en/" class="header__logo">Clonedike</a>
 
       <nav class="header__nav" id="nav">
-        <a href="#cases" class="header__link">Кейсы</a>
-        <a href="#process" class="header__link">Процесс</a>
-        <a href="#pricing" class="header__link">Цены и сроки</a>
-        <a href="#about" class="header__link">О студии</a>
+        <a href="#cases" class="header__link">Cases</a>
+        <a href="#process" class="header__link">Process</a>
+        <a href="#pricing" class="header__link">Pricing</a>
+        <a href="#about" class="header__link">About</a>
         <a href="#faq" class="header__link">FAQ</a>
-        <a href="#contacts" class="header__link">Контакты</a>
+        <a href="#contacts" class="header__link">Contacts</a>
       </nav>
 
-      <a href="/en/" class="header__lang" onclick="localStorage.setItem('lang','en')">EN</a>
+      <a href="/" class="header__lang" onclick="localStorage.setItem('lang','ru')">RU</a>
 
       <a href="https://t.me/tema_samoylov" target="_blank" rel="noopener" class="btn btn--primary header__cta">
-        Бесплатная консультация
+        Free Consultation
       </a>
 
-      <button class="header__burger" id="burger" aria-label="Открыть меню">
+      <button class="header__burger" id="burger" aria-label="Open menu">
         <span></span>
         <span></span>
         <span></span>
@@ -64,18 +64,18 @@
     <section class="hero">
       <div class="container hero__inner">
         <h1 class="hero__title">
-          Перенос вашего приложения<br>
-          <span class="hero__title--accent">на другие платформы</span>
+          Port your app<br>
+          <span class="hero__title--accent">to other platforms</span>
         </h1>
 
         <!-- Platform visual (typewriter) -->
-        <div class="hero__platforms hero__typewriter" aria-live="polite" data-lines='["с iOS на Android","с Android на iOS"]'>
+        <div class="hero__platforms hero__typewriter" aria-live="polite" data-lines='["from iOS to Android","from Android to iOS"]'>
           <span class="hero__typewriter-text"></span>
           <span class="hero__typewriter-cursor" aria-hidden="true">|</span>
         </div>
 
         <a href="https://t.me/tema_samoylov" target="_blank" rel="noopener" class="btn btn--primary btn--large hero__cta">
-          Записаться на бесплатную консультацию
+          Book a Free Consultation
         </a>
       </div>
     </section>
@@ -83,18 +83,18 @@
     <!-- Cases -->
     <section class="cases" id="cases">
       <div class="container">
-        <h2 class="cases__title">Кейсы</h2>
+        <h2 class="cases__title">Cases</h2>
 
         <div class="cases__grid">
           <article class="cases__card cases__card--calzen">
             <div class="cases__content">
               <h3 class="cases__card-title">Grit</h3>
-              <p class="cases__card-desc">Минималистичный таск трекер</p>
-              <p class="cases__card-time">Перевели с Android на iOS за неделю</p>
+              <p class="cases__card-desc">Minimalist task tracker</p>
+              <p class="cases__card-time">Ported from Android to iOS in one week</p>
             </div>
             <div class="cases__phones">
               <div class="cases__phone">
-                <img src="assets/grit-screenshot.png" alt="Grit — таск трекер" loading="lazy">
+                <img src="../assets/grit-screenshot.png" alt="Grit — task tracker" loading="lazy">
               </div>
             </div>
           </article>
@@ -102,7 +102,7 @@
           <article class="cases__card cases__card--summarizer">
             <div class="cases__content">
               <h3 class="cases__card-title">Coming Soon</h3>
-              <p class="cases__card-desc">Больше кейсов в разработке</p>
+              <p class="cases__card-desc">More cases in progress</p>
             </div>
           </article>
         </div>
@@ -112,38 +112,38 @@
     <!-- Process -->
     <section class="process" id="process">
       <div class="container">
-        <h2 class="section__title">Как мы работаем</h2>
+        <h2 class="section__title">How We Work</h2>
 
         <div class="process__grid">
           <div class="process__card">
             <span class="process__number">01</span>
-            <h3 class="process__card-title">Discovery / аудит</h3>
+            <h3 class="process__card-title">Discovery / Audit</h3>
             <ul class="process__card-text">
-              <li>Собираем контекст и пишем спецификации на основе текущего приложения.</li>
-              <li>Оцениваем сложность и ограничения.</li>
-              <li>Обговариваем сроки и цены.</li>
+              <li>We gather context and write specifications based on the existing app.</li>
+              <li>Assess complexity and constraints.</li>
+              <li>Agree on timeline and pricing.</li>
             </ul>
           </div>
 
           <div class="process__card">
             <span class="process__number">02</span>
-            <h3 class="process__card-title">Разработка</h3>
+            <h3 class="process__card-title">Development</h3>
             <ul class="process__card-text">
-              <li>Логика и вёрстка приближена к оригинальному приложению. Минимальные правки UI/UX в соответствии с гайдлайнами платформы.</li>
-              <li>Ежедневный трекинг результата.</li>
+              <li>Logic and UI closely mirrors the original app. Minimal UI/UX changes to comply with platform guidelines.</li>
+              <li>Daily progress tracking.</li>
             </ul>
           </div>
 
           <div class="process__card">
             <span class="process__number">03</span>
-            <h3 class="process__card-title">QA и стабилизация</h3>
-            <p class="process__card-text">Тестирование, краши, перфоманс.</p>
+            <h3 class="process__card-title">QA & Stabilization</h3>
+            <p class="process__card-text">Testing, crash fixes, performance.</p>
           </div>
 
           <div class="process__card">
             <span class="process__number">04</span>
-            <h3 class="process__card-title">Релиз и поддержка</h3>
-            <p class="process__card-text">Публикация, мониторинг, хотфиксы.</p>
+            <h3 class="process__card-title">Release & Support</h3>
+            <p class="process__card-text">Publishing, monitoring, hotfixes.</p>
           </div>
         </div>
       </div>
@@ -152,22 +152,22 @@
     <!-- Pricing & Timeline -->
     <section class="pricing" id="pricing">
       <div class="container">
-        <h2 class="section__title">Цены и сроки</h2>
+        <h2 class="section__title">Pricing & Timeline</h2>
 
         <div class="pricing__grid">
           <div class="pricing__card">
-            <h3 class="pricing__card-title">Сроки</h3>
-            <p class="pricing__value">от 1 недели до месяца</p>
+            <h3 class="pricing__card-title">Timeline</h3>
+            <p class="pricing__value">1 week – 1 month</p>
           </div>
 
           <div class="pricing__card">
-            <h3 class="pricing__card-title">Цены</h3>
-            <p class="pricing__value">от 100 до 400 тыс. ₽</p>
+            <h3 class="pricing__card-title">Price</h3>
+            <p class="pricing__value">$1,000 – $4,500</p>
           </div>
         </div>
 
         <p class="pricing__note">
-          Цена и сроки зависят от сложности приложения. Точные цифры сможем назвать после <a href="https://t.me/tema_samoylov" target="_blank" rel="noopener" class="pricing__link">бесплатного аудита</a>.
+          Price and timeline depend on app complexity. We'll give you exact numbers after a <a href="https://t.me/tema_samoylov" target="_blank" rel="noopener" class="pricing__link">free audit</a>.
         </p>
       </div>
     </section>
@@ -175,18 +175,18 @@
     <!-- About -->
     <section class="about" id="about">
       <div class="container">
-        <h2 class="section__title">О студии</h2>
+        <h2 class="section__title">About</h2>
         <div class="about__inner reveal">
         <div class="about__photo">
-          <img src="assets/photo.png" alt="Артём Самойлов" loading="lazy" />
+          <img src="../assets/photo.png" alt="Artem Samoylov" loading="lazy" />
         </div>
         <div class="about__content">
-          <h2 class="about__name">Артём Самойлов</h2>
-          <p class="about__role">Основатель студии</p>
+          <h2 class="about__name">Artem Samoylov</h2>
+          <p class="about__role">Studio Founder</p>
           <div class="about__text">
-            <p class="about__text-item">14+ лет в мобильной разработке.</p>
-            <p class="about__text-item">Ex Chapter Lead iOS Developer в МТС‑Банк.</p>
-            <p class="about__text-item">В данный момент развиваю направление портирования приложений на другие платформы с помощью ИИ.</p>
+            <p class="about__text-item">14+ years in mobile development.</p>
+            <p class="about__text-item">Ex Chapter Lead iOS Developer at MTS-Bank.</p>
+            <p class="about__text-item">Currently building an AI-assisted app porting practice across platforms.</p>
           </div>
         </div>
         </div>
@@ -202,73 +202,73 @@
 
           <div class="faq__item">
             <button class="faq__question" aria-expanded="false">
-              <span>Сможете повторить поведение 1-в-1?</span>
+              <span>Can you replicate the behavior 1-to-1?</span>
               <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
             <div class="faq__answer">
-              <p>Стремимся к максимальному паритету. Где есть платформенные различия — фиксируем их заранее и предлагаем варианты.</p>
+              <p>We aim for maximum parity. Where platform differences exist, we document them upfront and offer options.</p>
             </div>
           </div>
 
           <div class="faq__item">
             <button class="faq__question" aria-expanded="false">
-              <span>Что нужно от нас для старта?</span>
+              <span>What do you need from us to get started?</span>
               <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
             <div class="faq__answer">
-              <p>Ссылка на текущее приложение, доступ к репозиторию с кодом текущего приложения, доступ к API/бэкенду (если есть), дизайн/макеты (если есть)</p>
+              <p>A link to your current app, access to the source code repository, access to the API/backend (if any), and design files/mockups (if available).</p>
             </div>
           </div>
 
           <div class="faq__item">
             <button class="faq__question" aria-expanded="false">
-              <span>Можно ли портировать без исходников?</span>
+              <span>Can you port an app without the source code?</span>
               <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
             <div class="faq__answer">
-              <p>Иногда — да (через восстановление логики и воспроизведение поведения), но это дороже и рискованнее. На аудите скажем честно.</p>
+              <p>Sometimes — yes (by reconstructing the logic and reproducing the behavior), but it's more expensive and riskier. We'll be upfront about this during the audit.</p>
             </div>
           </div>
 
           <div class="faq__item">
             <button class="faq__question" aria-expanded="false">
-              <span>Что с аналитикой, пушами, платежами?</span>
+              <span>What about analytics, push notifications, and payments?</span>
               <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
             <div class="faq__answer">
-              <p>Закладываем как часть «must-have» для релиза и проверяем тестовыми сценариями.</p>
+              <p>We treat these as must-have release requirements and verify them with test scenarios.</p>
             </div>
           </div>
 
           <div class="faq__item">
             <button class="faq__question" aria-expanded="false">
-              <span>Делаете ли вы кроссплатформу (Flutter/React Native)?</span>
+              <span>Do you build cross-platform apps (Flutter/React Native)?</span>
               <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
             <div class="faq__answer">
-              <p>Если функционал приложения не упирается в ограничения кроссплатформы, по запросу можем сделать на Flutter/React Native.</p>
+              <p>If the app's functionality doesn't hit cross-platform limitations, we can build it in Flutter or React Native upon request.</p>
             </div>
           </div>
 
           <div class="faq__item">
             <button class="faq__question" aria-expanded="false">
-              <span>Кто публикует релиз в стор?</span>
+              <span>Who publishes the release to the store?</span>
               <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
             <div class="faq__answer">
-              <p>Можем сделать под вашим аккаунтом (рекомендуется) или помочь подготовить всё к публикации.</p>
+              <p>We can publish under your account (recommended) or help you prepare everything for submission.</p>
             </div>
           </div>
 
@@ -282,12 +282,12 @@
   <footer class="footer" id="contacts">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <a href="/" class="footer__logo">Clonedike</a>
+        <a href="/en/" class="footer__logo">Clonedike</a>
         <p class="footer__copy">&copy; 2026 Clonedike</p>
       </div>
 
       <div class="footer__contacts">
-        <h4 class="footer__heading">Контакты</h4>
+        <h4 class="footer__heading">Contacts</h4>
         <a href="https://t.me/tema_samoylov" target="_blank" rel="noopener" class="footer__link">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21.2 4.4L2.4 11.1c-.7.3-.7.9 0 1.1l4.8 1.5 1.9 5.9c.2.5.7.5 1 .2l2.7-2.2 5.3 3.9c.5.4 1.1.2 1.2-.4L22.5 5.4c.2-.8-.5-1.3-1.3-1z" fill="#0A84FF"/></svg>
           Telegram
@@ -295,11 +295,11 @@
       </div>
 
       <div class="footer__legal">
-        <a href="#" class="footer__link footer__link--small">Политика конфиденциальности</a>
+        <a href="#" class="footer__link footer__link--small">Privacy Policy</a>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>

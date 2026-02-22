@@ -190,6 +190,24 @@ h1, h2, h3, h4 {
   flex-shrink: 0;
 }
 
+.header__lang {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-muted);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: 6px 14px;
+  transition: all var(--transition);
+  flex-shrink: 0;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.header__lang:hover {
+  color: var(--color-dark);
+  border-color: var(--color-dark);
+}
+
 .header__burger {
   display: none;
   flex-direction: column;

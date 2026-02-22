@@ -104,7 +104,9 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---- Hero typewriter ---- */
   const typewriterEl = document.querySelector('.hero__typewriter-text');
   if (typewriterEl) {
-    const lines = ['с iOS на Android', 'с Android на iOS'];
+    const container = typewriterEl.closest('.hero__typewriter');
+    const linesAttr = container && container.dataset.lines;
+    const lines = linesAttr ? JSON.parse(linesAttr) : ['с iOS на Android', 'с Android на iOS'];
     const typeDelay = 90;
     const deleteDelay = 50;
     const pauseAfterType = 1800;
